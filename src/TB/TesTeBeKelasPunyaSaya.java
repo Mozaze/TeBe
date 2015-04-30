@@ -17,7 +17,7 @@ public class TesTeBeKelasPunyaSaya {
         bersihsekali.ceksirkulasi();
         bersihsekali.kelembapan();
         bersihsekali.suhu();
-        System.out.println("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+         System.out.println("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
         System.out.println("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
         ControlKeamanan amansekali= new ControlKeamanan();
         amansekali.cekkokoh();
