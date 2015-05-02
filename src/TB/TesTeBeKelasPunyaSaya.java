@@ -9,7 +9,7 @@ package TB;
  *
  * @author mozaze
  */
-import java.awt.Dimension;
+//import java.awt.Dimension;
 public class TesTeBeKelasPunyaSaya {
     public static void main(String [] zaze){
         ControlKebersihan bersihsekali= new ControlKebersihan();
@@ -24,6 +24,8 @@ public class TesTeBeKelasPunyaSaya {
          System.out.println("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
         System.out.println("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
         ControlKeamanan amansekali= new ControlKeamanan();
+        amansekali.inputkokoh();
+        amansekali.inputkokoh();
         amansekali.cekkokoh();
         amansekali.cekaman();
         amansekali.deteksibahaya();
