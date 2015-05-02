@@ -13,6 +13,10 @@ import java.awt.Dimension;
 public class TesTeBeKelasPunyaSaya {
     public static void main(String [] zaze){
         ControlKebersihan bersihsekali= new ControlKebersihan();
+        bersihsekali.inputcahaya();
+        bersihsekali.inputsirkulasi();
+        bersihsekali.inputlembab();
+        bersihsekali.inputsuhu();
         bersihsekali.cahaya();
         bersihsekali.ceksirkulasi();
         bersihsekali.kelembapan();

@@ -13,9 +13,24 @@ import java.util.Scanner;
 public class ControlKeamanan {
     Scanner scan= new Scanner(System.in);
     Keamanan aman= new Keamanan();
-    void cekkokoh(){
-        System.out.print("masukkan kondisi bangunan:");
+    
+    void inputkokoh(){
+        System.out.print("cek kondisi bangunan:");
         aman.setKondisi(scan.next());
+    }
+    
+    void inputaman(){
+        System.out.print("apakah kunci ada:");
+        aman.setKunci(scan.next());
+        System.out.print("apakah jendala aman:");
+        aman.setJendela(scan.next());
+    }
+    
+    
+    
+    void cekkokoh(){
+        //System.out.print("masukkan kondisi bangunan:");
+        //aman.setKondisi(scan.next());
         System.out.println("/........................../");
         if(aman.getKondisi().equals("oke")){
             System.out.println("bangunan oke sip");
@@ -27,8 +42,8 @@ public class ControlKeamanan {
     
     
     void cekaman(){
-        System.out.print("apakah kunci ada?:");
-        aman.setKunci(scan.next());
+        //System.out.print("apakah kunci ada?:");
+        //aman.setKunci(scan.next());
         System.out.print("apakah jendela aman:");
         aman.setJendela(scan.next());
         System.out.println("/........................../");

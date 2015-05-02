@@ -14,13 +14,37 @@ import java.util.Scanner;
 public class ControlKebersihan {
     Kebersihan bersih = new Kebersihan();
     Scanner scan = new Scanner(System.in);
+    
+    void inputsirkulasi(){
+        System.out.print("masukkan jumlah sirkulasi:");
+        bersih.setsirkulasi(scan.nextInt());
+    }
+    
+    void inputcahaya(){
+        System.out.print("============================");
+        System.out.print("masukkan jumlah pencahayaan / lampu:");
+        bersih.setpencahayaan(scan.nextInt());
+    }
+    
+    void inputlembab(){
+        System.out.print("/------------------------------/");
+        System.out.print("masukkan intensitas kelembapan");
+        bersih.setlembab(scan.nextInt());
+    }
+    
+    void inputsuhu(){
+        System.out.print("masukkan suhu ruangan:");
+        bersih.setsuhu(scan.nextInt());
+    }
+            
+            
     void ceksirkulasi(){
         //bersih.setsirkulasi(JOptionPane.showInputDialog("masukkan jumlah sirkulasi"));
         //if(bersih.getsirkulasi().equals(bersih.getsirkulasi)>4){
             
         //}
-        System.out.print("masukkan jumlah sirkulasi:");
-        bersih.setsirkulasi(scan.nextInt());
+        //System.out.print("masukkan jumlah sirkulasi:");
+        //bersih.setsirkulasi(scan.nextInt());
         if(bersih.getsirkulasi()>4){
             System.out.println("sirkulasi oke!!");
         }else if(bersih.getsirkulasi()==4){
@@ -31,9 +55,9 @@ public class ControlKebersihan {
     }
     
     void cahaya(){
-        System.out.println("/-------------------------------------/");
-        System.out.print("masukkan jumlah pencahayaan / lampu:");
-        bersih.setpencahayaan(scan.nextInt());
+        //System.out.println("/-------------------------------------/");
+        //System.out.print("masukkan jumlah pencahayaan / lampu:");
+        //bersih.setpencahayaan(scan.nextInt());
         if(bersih.getpencahayaan()>=250){
             System.out.println("cahaya kurang");
         }else if(bersih.getpencahayaan()<=350){
@@ -44,9 +68,9 @@ public class ControlKebersihan {
     }
     
     void kelembapan(){
-        System.out.println("/-------------------------------------/");
-        System.out.print("masukkan intensitas kelembapan:");
-        bersih.setlembab(scan.nextInt());
+        //System.out.println("/-------------------------------------/");
+       // System.out.print("masukkan intensitas kelembapan:");
+       // bersih.setlembab(scan.nextInt());
         if(bersih.getpencahayaan()>=70){
             System.out.println("kelembapan parah");
         }else if(bersih.getpencahayaan()==75){
@@ -58,9 +82,9 @@ public class ControlKebersihan {
     
     
     void suhu(){
-       System.out.println("/-------------------------------------/");
-       System.out.print("berapa suhu nya:       ");
-       bersih.setsuhu(scan.nextInt());
+       //System.out.println("/-------------------------------------/");
+       //System.out.print("berapa suhu nya:       ");
+       //bersih.setsuhu(scan.nextInt());
        if(bersih.getsuhu()<=25){
            System.out.println("sangat lembab");
        }else if(bersih.getsuhu()<=35){
@@ -69,12 +93,12 @@ public class ControlKebersihan {
            System.out.println("suhu terlalu panas");
        }
     }
-    public static void main(String [] args){
-        ControlKebersihan k= new ControlKebersihan();
-       k.ceksirkulasi();
-       k.cahaya();
-       k.kelembapan();
-       k.suhu();
+   // public static void main(String [] args){
+     //   ControlKebersihan k= new ControlKebersihan();
+     //  k.ceksirkulasi();
+      // k.cahaya();
+      // k.kelembapan();
+      // k.suhu();
         
-    }
+   // }
 }
